@@ -38,6 +38,6 @@ export interface CreateSolicitudRequest {
 }
 
 export interface UpdateEstadoRequest {
-  nuevoEstado: string;
-  motivo?: string;
+  estado: string;
+  motivoRechazo?: string | null;
 }
