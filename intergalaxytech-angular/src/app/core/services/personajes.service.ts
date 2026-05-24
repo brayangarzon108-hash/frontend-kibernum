@@ -25,8 +25,8 @@ export class PersonajesService {
   getPaged(
     nombre = "",
     estado = "",
-    page = 1,
-    pageSize = 50,
+    page = 10,
+    pageSize = 5,
   ): Observable<PagedResult<Personaje>> {
     let params = new HttpParams().set("page", page).set("pageSize", pageSize);
 
